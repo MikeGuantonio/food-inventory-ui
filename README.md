@@ -29,3 +29,26 @@ npm run start
 ## Running with containers
 
 This project leverages docker-compose to run the full stack as well as local development should you want to do both. This project is self hosted. You should be able to create a stack with docker-compose up -d to stat the server and run everything in the background. 
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
