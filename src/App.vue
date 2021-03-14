@@ -1,10 +1,32 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <new-food-item-form @send="addFood" />
+    <food-inventory :food="inventory" />
   </div>
-  <router-view />
 </template>
+
+<script>
+import NewFoodItemForm from "./components/NewFoodItemForm";
+import FoodInventory from "./components/FoodInventory";
+
+export default {
+  name: "App",
+  components: {
+    NewFoodItemForm,
+    FoodInventory
+  },
+  data() {
+    return {
+      inventory: []
+    };
+  },
+  methods: {
+    addFood(food) {
+      this.inventory.unshift(food);
+    }
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
