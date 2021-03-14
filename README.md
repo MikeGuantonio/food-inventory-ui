@@ -1,6 +1,6 @@
 # Food Inventory UI
 
-## Intent
+## Intent 
 
 This application is used to track my food inventory in my home. It should 
 * Keep track of the food  I have onhand
